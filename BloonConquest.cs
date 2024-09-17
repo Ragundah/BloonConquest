@@ -2,6 +2,7 @@ using MelonLoader;
 using BTD_Mod_Helper;
 using BloonConquest;
 using BTD_Mod_Helper.Extensions;
+using Il2CppNinjaKiwi.Common;
 
 [assembly: MelonInfo(typeof(BloonConquest.BloonConquest), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -31,6 +32,8 @@ public class BloonConquest : BloonsTD6Mod
     public override void OnMainMenu()
     {
         SetName(BTD_Mod_Helper.Api.Helpers.Instances.Game.GetPlayerLiNKAccount().DisplayName);
+        LocalizationManager LocMan = BTD_Mod_Helper.Api.Helpers.Instances.Game.GetLocalizationManager();
+        LocMan.defaultTable["BloonConquest-TheAdventurer"] = PlayerName;
         base.OnMainMenu();
     }
 }

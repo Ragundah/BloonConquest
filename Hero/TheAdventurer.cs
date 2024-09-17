@@ -18,7 +18,7 @@ namespace BloonConquest.Hero
 
         public override string BaseTower => TowerType.DartMonkey;
         public override int Cost => 0;
-        public override string DisplayName => "ERROR FTGU";
+        public override string DisplayName => "BCADN";
         public override string Title => "The Adventurer";
         public override string Level1Description => "A Newbie Adventurer. Gains no special benefits.";
         public override string Description => "Use 'Gear' and 'Talents' to gain powerful meta upgrades!";
@@ -28,8 +28,6 @@ namespace BloonConquest.Hero
         public override int MaxLevel => 1;
         public override float XpRatio => 1;
 
-        [Obsolete]
-        public override int Abilities => 0;
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
             towerModel.range = 10;
