@@ -8,5 +8,6 @@ public static class ModHelperData
 
     public const string Description = "Bloon Conquest is a standalone RPG.\n\nWhile currently in development I plan to add a bunch of stuff for this mod.\n\nCurrent Goals:\n- Fully Functional Hero\n- Loot System\n- Gear System\n- Inventory System\n- Talent System\n...and more!";
 
-    public const string Author = "Ragundah";
+    public const string RepoOwner = "Ragundah"; // TODO add your github username hero, also in the download url in README.md
+    public const string RepoName = "BloonConquest"; // TODO add your repo name here, also in the download url in README.md
 }

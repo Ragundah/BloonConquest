@@ -3,7 +3,7 @@ using BTD_Mod_Helper;
 using BloonConquest;
 using BTD_Mod_Helper.Extensions;
 
-[assembly: MelonInfo(typeof(BloonConquest.BloonConquest), ModHelperData.Name, ModHelperData.Version, ModHelperData.Author)]
+[assembly: MelonInfo(typeof(BloonConquest.BloonConquest), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace BloonConquest;
