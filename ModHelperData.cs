@@ -1,0 +1,12 @@
+namespace BloonConquest;
+
+public static class ModHelperData
+{
+    public const string WorksOnVersion = "44.0";
+    public const string Version = "1.0.0";
+    public const string Name = "Bloon Conquest RPG";
+
+    public const string Description = "Bloon Conquest is a standalone RPG.\n\nWhile currently in development I plan to add a bunch of stuff for this mod.\n\nCurrent Goals:\n- Fully Functional Hero\n- Loot System\n- Gear System\n- Inventory System\n- Talent System\n...and more!";
+
+    public const string Author = "Ragundah";
+}
