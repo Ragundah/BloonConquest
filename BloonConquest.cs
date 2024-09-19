@@ -81,10 +81,12 @@ public class BloonConquest : BloonsTD6Mod
     }
     public override void OnRoundEnd()
     {
-        while (curGoal < adventurer.damageDealt)
-        {
-            StatHandler.AddPoints(1);
-            curGoal = MathF.Floor(curGoal * 2.5f);
+        if (adventurer != null) {
+            while (curGoal < adventurer.damageDealt)
+            {
+                StatHandler.AddPoints(1);
+                curGoal = MathF.Floor(curGoal * 2f);
+            }
         }
         base.OnRoundEnd();
     }
