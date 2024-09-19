@@ -8,6 +8,17 @@ Bloon Conquest
 
 Bloons Conquest, a Standalone RPG Mod!
 
-More info coming soon :)
+Current Features:
+- Adventurer Tower
+- Spend Points to upgrade Adventurer
+- Gain Points based on Pops
+
+Planned Features:
+- Loot Chests (Buy for in-match cash contains Gear)
+- Inventory (Manage owned gear and open Loot Chests)
+- Equipment (Change base Stats, Weapon, and Ability based on gear)
+- Talents (Long term progression goal with changes across the board)
+- Maybe more? :)
+
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
