@@ -28,9 +28,9 @@ namespace BloonConquest.Hero
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
-            towerModel.range = 10;
+            towerModel.range = 20;
             var attackModel = towerModel.GetAttackModel();
-            attackModel.range = 10;
+            attackModel.range = 20;
         }
     }
 }

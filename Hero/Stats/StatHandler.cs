@@ -73,7 +73,7 @@ namespace BloonConquest.Hero.Stats
             ModHelperText StrButtonText = StrButton.AddText(new Info("BloonConquestPanelOpenStatButtonText", 0, 0, 280, 100), "Upgrade Str +1", 32, TextAlignmentOptions.Center);
             ModHelperButton DexButton = panel.AddButton(new Info("BloonConquestPanelOpenStatButton", 0, 0, 300, 120), VanillaSprites.PanelFrame, new Action(() => ApplyUpgrade(2, 1.125f)));
             ModHelperText DexButtonText = DexButton.AddText(new Info("BloonConquestPanelOpenStatButtonText", 0, 0, 280, 100), "Upgrade Dex +1", 32, TextAlignmentOptions.Center);
-            ModHelperButton IntButton = panel.AddButton(new Info("BloonConquestPanelOpenStatButton", 0, 0, 300, 120), VanillaSprites.PanelFrame, new Action(() => ApplyUpgrade(0, 1.2f)));
+            ModHelperButton IntButton = panel.AddButton(new Info("BloonConquestPanelOpenStatButton", 0, 0, 300, 120), VanillaSprites.PanelFrame, new Action(() => ApplyUpgrade(0, 1.125f)));
             ModHelperText IntButtonText = IntButton.AddText(new Info("BloonConquestPanelOpenStatButtonText", 0, 0, 280, 100), "Upgrade Int +1", 32, TextAlignmentOptions.Center);
             pointsText1 = PointsText;
         }
