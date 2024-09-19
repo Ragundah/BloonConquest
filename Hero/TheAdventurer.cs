@@ -1,6 +1,7 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.TowerSets;
 using Il2CppAssets.Scripts.Unity.Achievements.List;
 using JetBrains.Annotations;
 using System;
@@ -12,21 +13,18 @@ using UnityEngine;
 
 namespace BloonConquest.Hero
 {
-    internal class TheAdventurer : ModHero
+    internal class TheAdventurer : ModTower
     {
         
 
         public override string BaseTower => TowerType.DartMonkey;
         public override int Cost => 0;
         public override string DisplayName => "BCADN";
-        public override string Title => "The Adventurer";
-        public override string Level1Description => "A Newbie Adventurer. Gains no special benefits.";
-        public override string Description => "Use 'Gear' and 'Talents' to gain powerful meta upgrades!";
-        public override string NameStyle => TowerType.StrikerJones;
-        public override string BackgroundStyle => TowerType.Geraldo;
-        public override string GlowStyle => TowerType.AdmiralBrickell;
-        public override int MaxLevel => 1;
-        public override float XpRatio => 1;
+        public override TowerSet TowerSet => TowerSet.Primary;
+        public override int TopPathUpgrades => 0;
+        public override int MiddlePathUpgrades => 0;
+        public override int BottomPathUpgrades => 0;
+        public override int ShopTowerCount => 1;
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
