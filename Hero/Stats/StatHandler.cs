@@ -38,19 +38,19 @@ namespace BloonConquest.Hero.Stats
         public static void AddPoints(int point)
         {
             points += point;
-            if (BloonConquest.debugMode) { BloonConquest.DEBUG("Points Added: " + point); BloonConquest.DEBUG("New Value: " + points); }
+            if (BloonConquest.DebugMode) { BloonConquest.DEBUG("Points Added: " + point); BloonConquest.DEBUG("New Value: " + points); }
             UpdateAllTexts();
         }
         public static void RemovePoints(int point)
         {
             points -= point;
-            if (BloonConquest.debugMode) { BloonConquest.DEBUG("Points Removed: " + point); BloonConquest.DEBUG("New Value: " + points); }
+            if (BloonConquest.DebugMode) { BloonConquest.DEBUG("Points Removed: " + point); BloonConquest.DEBUG("New Value: " + points); }
             UpdateAllTexts();
         }
         public static void SetPoints(int point)
         {
             points = point;
-            if (BloonConquest.debugMode) { BloonConquest.DEBUG("Points Set To: " + point); BloonConquest.DEBUG("New Value: " + points); }
+            if (BloonConquest.DebugMode) { BloonConquest.DEBUG("Points Set To: " + point); BloonConquest.DEBUG("New Value: " + points); }
             UpdateAllTexts();
         }
         public static int GetPoints() { return points; }
@@ -58,8 +58,8 @@ namespace BloonConquest.Hero.Stats
         public static void CreateButton()
         {
             GameObject parent = GameObject.Find("MainHudRightAlign(Clone)");
-            ModHelperPanel panel = parent.gameObject.AddModHelperPanel(new Info("BloonConquestPanel", -200, -550, 380, 700), VanillaSprites.BrownPanel, null, 10, 10);
-            panel.transform.localPosition = new Vector3(-200, -350, 0);
+            ModHelperPanel panel = parent.gameObject.AddModHelperPanel(new Info("BloonConquestPanel", -200, -450, 380, 700), VanillaSprites.BrownPanel, null, 10, 10);
+            //panel.transform.localPosition = new Vector3(-200, -350, 0);
             panel.AddComponent<VerticalLayoutGroup>();
             var rect = new RectOffset();
             rect.bottom = 10;
